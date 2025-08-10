@@ -484,5 +484,9 @@ def run_flask_app():
     # Run Flask app without debug mode to avoid threading issues
     app.run(host='0.0.0.0', port=5000, debug=False)
 
+# For Vercel deployment, we need to expose the app object directly
 if __name__ == "__main__":
     run_flask_app()
+else:
+    # Load environment variables for Vercel
+    load_dotenv()
