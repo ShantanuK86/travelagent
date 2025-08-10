@@ -2,3 +2,5 @@ autogen-agentchat
 autogen-ext[openai]
 python-dotenv
 streamlit
+requests
+flask
